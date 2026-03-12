@@ -1,6 +1,7 @@
 package org.fis.grupo3;
 import java.util.ArrayList;
 
+<<<<<<< HEAD:src/main/java/org/fis/grupo3/Autoridades.java
 public class Autoridades {
 	private int idAutoridad;
 	private String nombre;
@@ -8,6 +9,9 @@ public class Autoridades {
 	private String cargo;
 	private int numeroVotos;
 	private boolean electo;
+=======
+public class Autoridad {
+>>>>>>> 900b34736952a456218513a053c7d29d612fd36e:src/main/java/org/fis/grupo3/Autoridad.java
 }
 public Autoridades(){
 }
