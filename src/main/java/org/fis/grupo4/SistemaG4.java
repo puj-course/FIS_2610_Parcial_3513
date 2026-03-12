@@ -12,6 +12,7 @@ public class SistemaG4 {
     public List<ProcesosElectoralesG4> getProcesosElectorales() {
         return procesosElectorales;
     }
+    
 
     public void setProcesosElectorales(List<ProcesosElectoralesG4> procesosElectorales) {
         this.procesosElectorales = procesosElectorales;
