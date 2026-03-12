@@ -1,4 +1,5 @@
 package org.fis.grupo3;
+import java.util.List;
 
 public class PartidoPoliticos {
     private String idPartido;
