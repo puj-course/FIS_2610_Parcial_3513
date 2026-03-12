@@ -9,5 +9,19 @@ public class Main { // main principal del proyecto (NO MODIFICAR)
             
             System.out.println("i = " + i);
         }
+        
+        // Crear objeto que permite consultar resultados
+        ConsultaResultados consulta = new ConsultaResultados();
+
+        // Crear resultados de ejemplo
+        Resultado r1 = new Resultado("Candidato A", 120, 5);
+        Resultado r2 = new Resultado("Candidato B", 95, 5);
+
+        // Agregar resultados al sistema
+        consulta.agregarResultado(r1);
+        consulta.agregarResultado(r2);
+
+        // Mostrar resultados en pantalla
+        consulta.mostrarResultados();
     }
 }
