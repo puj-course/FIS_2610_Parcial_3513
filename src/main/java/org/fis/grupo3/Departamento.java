@@ -4,6 +4,7 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+//
 public class Departamento {
     private int idDepartamento;
     private int nombre;
