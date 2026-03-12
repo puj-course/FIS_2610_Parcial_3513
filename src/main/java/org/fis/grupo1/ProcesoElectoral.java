@@ -35,5 +35,14 @@ public class ProcesoElectoral {
         this.estado = estado;
     }
 
+    @Override
+    public String toString() { // Método para mostrar la información del proceso electoral
+        return " Registrando Proceso Electoral " +
+               "Tipo: " + tipo + "Fecha: " + fecha + "Estado: " + estado  + "Candidatos asociados:" +"Votantes habilitados" +"Mesas electorales: ";
+    }
 
+    public static void main(String[] args) { //main para probar la clase ProcesoElectoral 
+        ProcesoElectoral proceso = new ProcesoElectoral("Presidencial", "2026-05-15", "Activo");
+        System.out.println(proceso);
+    }
 }
