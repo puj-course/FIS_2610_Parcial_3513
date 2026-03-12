@@ -1,6 +1,6 @@
 package org.fis;
 
-public class EjemploBase {
+public class mainGrupo4 {
     // Este archivo es solo un ejemplo. No lo modifiques.
     // Coloca tu código en un nuevo archivo java en tu propia carpeta de grupo dentro de /fis.
 
