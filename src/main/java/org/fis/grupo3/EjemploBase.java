@@ -1,4 +1,4 @@
-package org.fis;
+package org.fis.grupo3;
 
 public class EjemploBase {
     // Este archivo es solo un ejemplo. No lo modifiques.
