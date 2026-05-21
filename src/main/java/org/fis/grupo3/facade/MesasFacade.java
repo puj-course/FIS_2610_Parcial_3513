@@ -83,3 +83,4 @@ public class MesasVotacionFacade {
         throw new IllegalStateException("No hay jurado asignado a la mesa " + mesaId + ".");
     }
 }
+/
