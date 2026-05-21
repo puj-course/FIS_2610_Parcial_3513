@@ -33,4 +33,23 @@ public class FactoryTests {
         System.out.println("Cedula: "+jurado.getCedula());
         System.out.println("Mesa asignada: "+jurado.getMesaAsociada());
     }
+
+    @Test
+    //Negativa
+    void createJuradoMesaNegativa(){
+        JuradoVotacion jurado = (JuradoVotacion) juradoFactory.create("1026", -36);
+        assertNull(jurado);
+    }
+
+    @Test
+        //Borde
+    void createJuradoBordeMesa(){
+        JuradoVotacion jurado = (JuradoVotacion) juradoFactory.create("1026", 638648486);
+        assertNotNull(jurado);
+        assertEquals("1025", jurado.getCedula());
+
+        System.out.println("Prueba normal: Creación jurado");
+        System.out.println("Cedula: "+jurado.getCedula());
+        System.out.println("Mesa asignada: "+jurado.getMesaAsociada());
+    }
 }
