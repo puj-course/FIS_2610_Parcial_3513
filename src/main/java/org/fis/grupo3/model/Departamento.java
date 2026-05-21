@@ -1,7 +1,5 @@
-package org.fis.grupo3;
+package org.fis.grupo3.model;
 
-import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 //

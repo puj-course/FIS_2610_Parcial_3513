@@ -1,4 +1,4 @@
-package org.fis.grupo3;
+package org.fis.grupo3.model;
 
 public class EjemploBase {
     // Este archivo es solo un ejemplo. No lo modifiques.

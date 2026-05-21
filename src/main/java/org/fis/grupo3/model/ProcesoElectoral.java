@@ -1,4 +1,5 @@
-package org.fis.grupo3;
+package org.fis.grupo3.model;
+
 import java.util.*;
 
 public class ProcesoElectoral {
@@ -9,17 +10,10 @@ public class ProcesoElectoral {
     private Jurado jurado;
     private PartidoPoliticos partidoPoliticos;
     private Candidatos candidatos;
-    private Autoridad autoridad;
 
 
     public ProcesoElectoral(){};
 
-    public Autoridad getAutoridad() {
-        return autoridad;
-    }
-    public void setAutoridad(Autoridad autoridad) {
-        this.autoridad = autoridad;
-    }
     public Jurado getJurado() {
         return jurado;
     }

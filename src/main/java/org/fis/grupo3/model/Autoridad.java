@@ -1,4 +1,4 @@
-package org.fis.grupo3;
+package org.fis.grupo3.model;
 import java.util.ArrayList;
 
 <<<<<<< HEAD:src/main/java/org/fis/grupo3/Autoridades.java
