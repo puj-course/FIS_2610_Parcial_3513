@@ -23,6 +23,14 @@
         <java.version>17</java.version>
         <sonar.organization>puj-course</sonar.organization>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
     <dependencies>
 
