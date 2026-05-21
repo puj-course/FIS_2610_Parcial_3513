@@ -1,8 +1,8 @@
 package org.fis.grupo3.facade;
 
-import org.fis.grupo3.Jurado;
-import org.fis.grupo3.Mesas;
-import org.fis.grupo3.PustosVotacion;|
+import org.fis.grupo3.model.Jurado;
+import org.fis.grupo3.model.Mesas;
+import org.fis.grupo3.model.PustosVotacion;
 
 import java.util.ArrayList;
 import java.util.List;

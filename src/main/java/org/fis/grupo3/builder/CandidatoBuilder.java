@@ -1,6 +1,6 @@
 package org.fis.grupo3.builder;
 
-import org.fis.grupo3.Candidato;
+import org.fis.grupo3.model.Candidato;
 
 public class CandidatoBuilder {
 

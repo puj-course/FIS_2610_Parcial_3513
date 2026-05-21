@@ -1,15 +1,13 @@
-package org.fis.grupo3.model;
+package org.fis.grupo3.observer;
+
+import org.fis.grupo3.model.Candidatos;
+import org.fis.grupo3.model.Jurado;
+import org.fis.grupo3.model.Mesas;
+import org.fis.grupo3.model.PartidoPoliticos;
+import org.fis.grupo3.model.PustosVotacion;
 
 import java.util.*;
-//Interfaz observer
-interface ElectoralObserver {
-    void actualizar(String evento, ProcesoElectoral proceso);
-}
-interface ElectoralSubject {
-    void agregarObservador(ElectoralObserver o);
-    void eliminarObservador(ElectoralObserver o);
-    void notificarObservadores(String evento);
-}
+
 public class ProcesoElectoral implements ElectoralSubject {
     private int id;
     private String tipoEleccion;
@@ -44,15 +42,4 @@ public class ProcesoElectoral implements ElectoralSubject {
         notificarObservadores("CIERRE");
     }
 }
-class ObservadorAuditoria implements ElectoralObserver{
-    @Override
-    public void actualizar(String evento, ProcesoElectoral proceso){
-        System.out.println("[AUDITORÍA] Evento '" + evento + "' registrado en el proceso.");
-    }
-}
-class ObservadorNotificacion implements ElectoralObserver{
-    @Override
-    public void actualizar(String evento, ProcesoElectoral proceso){
-        System.out.println("[NOTIFICACIÓN] Se envió alerta por evento: " + evento);
-    }
-}
+
