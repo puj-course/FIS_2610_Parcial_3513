@@ -7,6 +7,13 @@ public class Departamento {
     private List<Municipio> municipios;
     private String codigo;
 
+    public Departamento(String codigo, List<Municipio> municipios) {
+        this.codigo = codigo;
+        this.municipios = municipios;
+    }
+
+    public Departamento() {}
+
     public Integer conteoVotos(){
         Integer total=0;
         for(Municipio m: municipios){
