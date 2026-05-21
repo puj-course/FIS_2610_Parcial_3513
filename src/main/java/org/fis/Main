@@ -1,27 +1,55 @@
-package org.fis;
+import java.util.Scanner;
+import java.time.LocalDateTime;
 
-public class Main { // main principal del proyecto (NO MODIFICAR)
+public class Main {
+
     public static void main(String[] args) {
-   
-        System.out.printf("Hi and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            
-            System.out.println("i = " + i);
-        }
+        Scanner scanner = new Scanner(System.in);
+
+        Reclamo reclamo = registrarReclamo(scanner);
+
+        System.out.println("\nReclamo registrado correctamente:");
+        System.out.println(reclamo);
+
+        scanner.close();
+    }
+
+    public static Reclamo registrarReclamo(Scanner scanner) {
         
-        // Crear objeto que permite consultar resultados
-        ConsultaResultados consulta = new ConsultaResultados();
+        //Crear un nuevo reclamo y solicitar al usuario que ingrese los datos necesarios
+        Reclamo reclamo = new Reclamo();
 
-        // Crear resultados de ejemplo
-        Resultado r1 = new Resultado("Candidato A", 120, 5);
-        Resultado r2 = new Resultado("Candidato B", 95, 5);
+        System.out.println("Registrar Reclamo");
 
-        // Agregar resultados al sistema
-        consulta.agregarResultado(r1);
-        consulta.agregarResultado(r2);
+        System.out.print("Ingrese ID del reclamo: ");
+        reclamo.setIdReclamo(scanner.nextInt());
+        scanner.nextLine();
 
-        // Mostrar resultados en pantalla
-        consulta.mostrarResultados();
+        System.out.print("Tipo (Reclamacion / Incidente): ");
+        reclamo.setTipo(scanner.nextLine());
+
+        System.out.print("Descripcion del reclamo: ");
+        reclamo.setDescripcion(scanner.nextLine());
+
+        reclamo.setFechaRegistro(LocalDateTime.now());
+
+        System.out.print("Estado (Pendiente / En revision / Resuelto): ");
+        reclamo.setEstado(scanner.nextLine());
+
+        System.out.print("ID de la mesa: ");
+        reclamo.setIdMesa(scanner.nextInt());
+
+        System.out.print("ID del puesto de votacion: ");
+        reclamo.setIdPuestoVotacion(scanner.nextInt());
+        scanner.nextLine();
+
+        System.out.print("Nombre del partido: ");
+        reclamo.setNombrePartido(scanner.nextLine());
+
+        System.out.print("Nombre del testigo: ");
+        reclamo.setNombreTestigo(scanner.nextLine());
+
+        return reclamo;
     }
 }
