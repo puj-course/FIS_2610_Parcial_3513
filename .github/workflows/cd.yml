@@ -1,4 +1,4 @@
-name: CD EntregaYa – Docker
+name: CD Parcial2     
 
 on:
   push:
