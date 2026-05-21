@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AutoridadElectoral {
-
+public class ProcesoElectoralDirector {
+    private String tipoEleccion;
+    private String fecha;
+    private boolean estado;
 }
