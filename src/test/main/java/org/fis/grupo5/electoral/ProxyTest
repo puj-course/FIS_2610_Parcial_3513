@@ -1,0 +1,38 @@
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import java.time.LocalDateTime;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class ActaProxyTest {
+
+    private ActaProxy proxy;
+    private Candidato candidato;
+
+    @BeforeEach
+    void setUp() {
+        PartidoPolitico partido = new PartidoPolitico(1, "Partido Ejemplo");
+        candidato = new Candidato(1, "Ana Gómez", "1000000001", partido);
+
+        Departamento dep = new Departamento(1, "Cundinamarca", "CUN");
+        Municipio mun = new Municipio(1, "Bogotá", dep);
+        PuestoDeVotacion puesto = new PuestoDeVotacion(1, "Colegio Nacional", "Calle 10", mun);
+        Mesa mesa = new Mesa(1, 101, 350, puesto);
+
+        ActaReal actaReal = new ActaReal(1, mesa, LocalDateTime.now());
+        proxy = new ActaProxy(actaReal, "jurado_test");
+    }
+
+    @Test
+    void testAgregarResultadoRegistraEnBitacora() {
+        ResultadoCandidato resultado = new ResultadoCandidato(1, candidato, 120, null);
+        proxy.agregarResultado(resultado);
+
+        assertEquals(1, proxy.getResultados().size());
+        assertEquals(2, proxy.getBitacoraAccesos().size());
+    }
+
+    @Test
+    void testBitacoraVaciaAlIniciar() {
+        assertEquals(0, proxy.getBitacoraAccesos().size());
+    }
+}
