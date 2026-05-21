@@ -3,9 +3,9 @@ package org.fis.grupo1;
 import java.util.ArrayList;
 
 public class Mesa {
-    ArrayList <String> votos;
-    ArrayList <JuradoVotacion> jurados;
-    int idMesa;
+    private ArrayList <String> votos;
+    private ArrayList <JuradoVotacion> jurados;
+    private int idMesa;
 
     public Mesa(ArrayList<String> votos, ArrayList<JuradoVotacion> jurados, int idMesa) {
         this.votos = votos;
@@ -29,15 +29,7 @@ public class Mesa {
         this.jurados = jurados;
     }
 
-    public int getIdMesa() {
-        return idMesa;
-    }
+    public int getIdMesa() { return idMesa; }
 
-    public void setIdMesa(int idMesa) {
-        this.idMesa = idMesa;
-    }
+    public void setIdMesa(int idMesa) { this.idMesa = idMesa; }
 }
-
-
-
-
