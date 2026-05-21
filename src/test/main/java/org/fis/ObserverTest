@@ -1,0 +1,79 @@
+package org.fis.grupo3.model;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ProcesoElectoralObserverTest {
+    static class ObservadorEspía implements ElectoralObserver {
+        List<String> eventosRecibidos = new ArrayList<>();
+
+        @Override
+        public void actualizar(String evento, ProcesoElectoral proceso) {
+            eventosRecibidos.add(evento);
+        }
+    }
+
+    private ProcesoElectoral proceso;
+    private ObservadorEspía espía;
+
+    @BeforeEach
+    void setUp() {
+        proceso = new ProcesoElectoral();
+        espía   = new ObservadorEspía();
+    }
+    @Test
+    void observadorRegistrado_recibeEvento() {
+        proceso.agregarObservador(espía);
+        proceso.iniciarProceso();
+
+        assertEquals(1, espía.eventosRecibidos.size());
+        assertEquals("INICIO", espía.eventosRecibidos.get(0));
+    }
+    @Test
+    void observadorEliminado_noRecibeEvento() {
+        proceso.agregarObservador(espía);
+        proceso.eliminarObservador(espía);
+        proceso.iniciarProceso();
+
+        assertTrue(espía.eventosRecibidos.isEmpty());
+    }
+    @Test
+    void variosObservadores_todosReciben() {
+        ObservadorEspía espía2 = new ObservadorEspía();
+        proceso.agregarObservador(espía);
+        proceso.agregarObservador(espía2);
+
+        proceso.cerrarProceso();
+
+        assertEquals("CIERRE", espía.eventosRecibidos.get(0));
+        assertEquals("CIERRE", espía2.eventosRecibidos.get(0));
+    }
+    @Test
+    void multipleEventos_cadaUnoNotifica() {
+        proceso.agregarObservador(espía);
+
+        proceso.iniciarProceso();
+        proceso.cerrarProceso();
+
+        assertEquals(2, espía.eventosRecibidos.size());
+        assertEquals("INICIO",  espía.eventosRecibidos.get(0));
+        assertEquals("CIERRE",  espía.eventosRecibidos.get(1));
+    }
+    @Test
+    void sinObservadores_noLanzaExcepcion() {
+        assertDoesNotThrow(() -> proceso.iniciarProceso());
+    }
+    @Test
+    void observador_recibeReferenciaCorrecta() {
+        ProcesoElectoral[] referencia = new ProcesoElectoral[1];
+
+        proceso.agregarObservador((evento, p) -> referencia[0] = p);
+        proceso.iniciarProceso();
+
+        assertSame(proceso, referencia[0]);
+    }
+}
