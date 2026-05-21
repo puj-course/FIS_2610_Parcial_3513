@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd2513bd-72dc-4c2a-8835-dee61279377c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/builder/CandidatoBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/builder/CandidatoBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/decorator/JuradoDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/decorator/JuradoDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/facade/MesasFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/facade/MesasFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/observer/ProcesoElectoralObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/observer/ProcesoElectoralObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/protorype/PustosVotacionPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/protorype/PustosVotacionPrototype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/strategy/CandidatoStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/strategy/CandidatoStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/PuestoVotacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cd.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="GitHub Workflow" />
         <option value="Class" />
       </list>
     </option>
@@ -61,6 +61,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dears\FIS_2610_Parcial_3513\.github\workflows" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.fis.grupo3" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="FIS_2610_Parcial_3513" />
@@ -91,7 +99,7 @@
       <updated>1773328191256</updated>
       <workItem from="1773328192693" duration="2386000" />
       <workItem from="1773433852342" duration="36000" />
-      <workItem from="1779375042202" duration="774000" />
+      <workItem from="1779375042202" duration="2307000" />
     </task>
     <servers />
   </component>
