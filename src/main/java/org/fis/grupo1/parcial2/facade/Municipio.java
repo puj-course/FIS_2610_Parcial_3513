@@ -1,13 +1,14 @@
-package org.fis.grupo1;
+package org.fis.grupo1.parcial2.facade;
 
 public class Municipio {
 
     String nombre;
-    Departamento departamento;
+    String departamento;
 
-    public Municipio(String nombre, Departamento departamento) {
+    public Municipio(String nombre, String departamento) {
         this.nombre = nombre;
         this.departamento = departamento;
     }
 
 }
+
