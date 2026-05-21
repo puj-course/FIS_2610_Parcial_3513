@@ -16,6 +16,14 @@
         <!-- Para que Surefire sepa usar JUnit 5 -->
         <junit.jupiter.version>5.9.2</junit.jupiter.version>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>
