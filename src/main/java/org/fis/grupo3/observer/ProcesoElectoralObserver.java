@@ -1,4 +1,4 @@
-package org.fis.grupo3.model.observer;
+package org.fis.grupo3.observer;
 
 public class ProcesoElectoralObserver {
 }

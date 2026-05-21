@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd2513bd-72dc-4c2a-8835-dee61279377c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/Autoridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/Autoridad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/Candidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/Candidato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/Candidatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/Candidatos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/Departamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/Departamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/EjemploBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/EjemploBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/Jurado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/Jurado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/Mesas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/Mesas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/PartidoPoliticos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/PartidoPoliticos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/PartidoPolítico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/PartidoPolítico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/ProcesoElectoral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/ProcesoElectoral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/PustosVotacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/PustosVotacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/builder/CandidatoBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/builder/CandidatoBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/decorator/JuradoDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/decorator/JuradoDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/facade/MesasFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/facade/MesasFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/observer/ProcesoElectoralObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/observer/ProcesoElectoralObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/protorype/PustosVotacionPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/protorype/PustosVotacionPrototype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/model/strategy/CandidatoStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fis/grupo3/strategy/CandidatoStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,7 @@
       <updated>1773328191256</updated>
       <workItem from="1773328192693" duration="2386000" />
       <workItem from="1773433852342" duration="36000" />
-      <workItem from="1779375042202" duration="303000" />
+      <workItem from="1779375042202" duration="774000" />
     </task>
     <servers />
   </component>
