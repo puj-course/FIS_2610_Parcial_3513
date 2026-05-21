@@ -1,4 +1,4 @@
-name: CD Parcial2     
+name: CD Parcial2
 
 on:
   push:
