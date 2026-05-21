@@ -7,4 +7,12 @@ public class JuradoVotacion extends Persona{
         super(cedula);
         this.mesaAsociada = mesaAsociada;
     }
+
+    public int getMesaAsociada() {
+        return mesaAsociada;
+    }
+
+    public void setMesaAsociada(int mesaAsociada) {
+        this.mesaAsociada = mesaAsociada;
+    }
 }
