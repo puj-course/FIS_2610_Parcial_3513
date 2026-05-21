@@ -5,10 +5,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class ProcesoElectoralDirector {
-    private String tipoEleccion;
-    private String fecha;
-    private boolean estado;
+    private ProcesosElectorales procesosElectorales;
+
+    public ProcesoElectoralDirector(ProcesosElectorales procesosElectorales) {
+        this.procesosElectorales = procesosElectorales;
+    }
+
+    public void makeProceso(){
+        procesosElectorales.reset();
+        procesosElectorales.anadirTipoDeEleccion("Tipo de Eleccion");
+    }
 }
