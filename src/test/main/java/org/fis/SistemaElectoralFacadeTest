@@ -1,0 +1,40 @@
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import java.time.LocalDate;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class SistemaElectoralFacadeTest {
+
+    private SistemaElectoralFacade sistema;
+
+    @BeforeEach
+    void setUp() {
+        sistema = new SistemaElectoralFacade();
+    }
+
+    @Test
+    void testRegistrarProcesoYDepartamento() {
+        ProcesoElectoral proceso = sistema.registrarProceso(1, "Legislativas", LocalDate.of(2026, 3, 13), "PROGRAMADO");
+        Departamento dep = sistema.registrarDepartamento(1, "Cundinamarca", "CUN");
+
+        assertNotNull(proceso);
+        assertEquals("Legislativas", proceso.getTipoEleccion());
+        assertEquals(1, proceso.getDepartamentos().size());
+        assertEquals("Cundinamarca", dep.getNombre());
+    }
+
+    @Test
+    void testRegistrarMesaEnPuestoVacio() {
+        sistema.registrarProceso(1, "Legislativas", LocalDate.of(2026, 3, 13), "PROGRAMADO");
+        Departamento dep = sistema.registrarDepartamento(1, "Cundinamarca", "CUN");
+        Municipio mun = sistema.registrarMunicipio(1, "Bogotá", dep);
+        PuestoDeVotacion puesto = sistema.registrarPuesto(1, "Colegio Nacional", "Calle 10", mun);
+
+        assertEquals(0, puesto.getMesas().size());
+
+        Mesa mesa = sistema.registrarMesa(1, 101, 350, puesto);
+
+        assertEquals(1, puesto.getMesas().size());
+        assertEquals(101, mesa.getNumero());
+    }
+}
